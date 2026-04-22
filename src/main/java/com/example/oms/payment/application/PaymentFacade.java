@@ -32,8 +32,4 @@ public class PaymentFacade {
                 )
         );
     }
-
-    public PaymentResult.Paid getPayment(Long paymentId) {
-        return paymentService.getPayment(paymentId);
-    }
 }
