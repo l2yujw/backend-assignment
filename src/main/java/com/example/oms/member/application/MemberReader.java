@@ -17,4 +17,10 @@ public class MemberReader {
         return memberRepository.findById(id)
                 .orElseThrow(() -> new DomainException(MemberError.MEMBER_NOT_FOUND, "memberId=" + id));
     }
+
+    public void assertExists(Long id) {
+        if (!memberRepository.existsById(id)) {
+            throw new DomainException(MemberError.MEMBER_NOT_FOUND, "memberId=" + id);
+        }
+    }
 }

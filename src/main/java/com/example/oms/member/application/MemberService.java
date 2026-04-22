@@ -28,4 +28,8 @@ public class MemberService {
         Member member = memberReader.getByIdOrThrow(memberId);
         return MemberResult.MemberInfo.from(member);
     }
+
+    public void assertExists(Long memberId) {
+        memberReader.assertExists(memberId);
+    }
 }
