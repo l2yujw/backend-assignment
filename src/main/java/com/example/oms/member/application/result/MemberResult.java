@@ -1,7 +1,7 @@
 package com.example.oms.member.application.result;
 
 import com.example.oms.member.domain.Member;
-import com.example.oms.member.domain.MemberGrade;
+import com.example.oms.core.type.MemberGrade;
 
 public final class MemberResult {
 

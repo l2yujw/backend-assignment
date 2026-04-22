@@ -1,4 +1,4 @@
-package com.example.oms.discount.domain;
+package com.example.oms.core.type;
 
 public enum DiscountType {
     FIXED, RATE

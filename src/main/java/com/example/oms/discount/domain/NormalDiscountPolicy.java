@@ -1,6 +1,7 @@
 package com.example.oms.discount.domain;
 
-import com.example.oms.member.domain.MemberGrade;
+import com.example.oms.core.type.DiscountType;
+import com.example.oms.core.type.MemberGrade;
 
 public class NormalDiscountPolicy implements DiscountPolicy {
 

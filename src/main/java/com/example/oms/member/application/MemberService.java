@@ -3,7 +3,7 @@ package com.example.oms.member.application;
 import com.example.oms.member.application.command.MemberCommand;
 import com.example.oms.member.application.result.MemberResult;
 import com.example.oms.member.domain.Member;
-import com.example.oms.member.domain.MemberGrade;
+import com.example.oms.core.type.MemberGrade;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,6 +29,7 @@ public class MemberService {
         return MemberResult.MemberInfo.from(member);
     }
 
+    @Transactional(readOnly = true)
     public void assertExists(Long memberId) {
         memberReader.assertExists(memberId);
     }

@@ -2,7 +2,7 @@ package com.example.oms.discount.application;
 
 import com.example.oms.discount.application.result.DiscountResult;
 import com.example.oms.discount.domain.DiscountPolicy;
-import com.example.oms.member.domain.MemberGrade;
+import com.example.oms.core.type.MemberGrade;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

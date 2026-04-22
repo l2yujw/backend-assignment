@@ -3,6 +3,7 @@ package com.example.oms.member.domain;
 import com.example.oms.core.annotation.AggregateRoot;
 import com.example.oms.core.guard.Guard;
 import com.example.oms.core.persistence.AbstractTime;
+import com.example.oms.core.type.MemberGrade;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

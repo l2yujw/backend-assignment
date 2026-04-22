@@ -1,6 +1,6 @@
 package com.example.oms.discount.application.result;
 
-import com.example.oms.discount.domain.DiscountType;
+import com.example.oms.core.type.DiscountType;
 
 public record DiscountResult(
         String policyName,
