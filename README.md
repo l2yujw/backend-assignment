@@ -132,4 +132,5 @@ interface PaymentMethodDiscountPolicy {
 
 **DiscountServiceTest** — 등급별 할인 금액 정확성, 등급 + 결제 수단 중복 할인 시 최종 금액 검증
 
+
 **PaymentHistoryIntegrityTest** — Spring Context 없이 인메모리 Fake로 조립. 정책 변경/삭제 이후에도 과거 이력이 스냅샷으로 보존되는지 검증

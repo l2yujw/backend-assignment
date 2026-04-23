@@ -1,9 +1,6 @@
 package com.example.oms.discount.infra;
 
-import com.example.oms.discount.domain.DiscountPolicy;
-import com.example.oms.discount.domain.NormalDiscountPolicy;
-import com.example.oms.discount.domain.VipDiscountPolicy;
-import com.example.oms.discount.domain.VvipDiscountPolicy;
+import com.example.oms.discount.domain.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,6 +16,13 @@ public class DiscountPolicyConfig {
                 new NormalDiscountPolicy(),
                 new VipDiscountPolicy(),
                 new VvipDiscountPolicy()
+        );
+    }
+
+    @Bean
+    public List<PaymentMethodDiscountPolicy> paymentMethodDiscountPolicies() {
+        return List.of(
+                new PointPaymentDiscountPolicy()
         );
     }
 }
